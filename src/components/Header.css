@@ -1,0 +1,11 @@
+/* Magic shimmer effect on hover for the header text */
+header:hover h4 {
+    animation: shimmer 1.5s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { text-shadow: 0 0 5px #f5d042, 0 0 10px #f5d042, 0 0 15px #f5d042; }
+    50% { text-shadow: 0 0 10px #f5d042, 0 0 20px #f5d042, 0 0 30px #f5d042; }
+    100% { text-shadow: 0 0 5px #f5d042, 0 0 10px #f5d042, 0 0 15px #f5d042; }
+  }
+  
