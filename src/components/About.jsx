@@ -6,9 +6,9 @@ import HagridButton from './HagridButton';
 
 const About = () => {
   const skillIcons = [
-    "react", "javascript", "typescript", "nodejs", "python", "html5", "css3",
-    "git", "github", "mongodb", "postgresql", "docker", "aws", "firebase",
-    "visualstudiocode", "tailwindcss", "nextjs", "redux", "express"
+    "react", "javascript", "nodejs", "html5", "css3",
+    "git", "github", "mongodb", "firebase",
+    "visualstudiocode", "mui", "redux", "express","java","bootstrap"
   ];
 
   // Magical floating animation
@@ -43,7 +43,7 @@ const About = () => {
       transition={{ duration: 1.2 }}
     >
       <Box sx={{ 
-        backgroundColor: '#5e0b0b',
+        backgroundColor: 'rgba(94, 11, 11, 0.1)',
         color: '#f5d042',
         p: 4,
         borderRadius: '12px',
@@ -126,10 +126,11 @@ const About = () => {
               Just as every great wizard has their preferred spells, below you'll find my arsenal of magical tools - each one carefully mastered to create enchanting web experiences that leave users spellbound.
             </Typography>
 
-            {/* Add the HagridButton here */}
-            <HagridButton onClick={handleDownloadCV} />
+            
+            {/* <HagridButton onClick={handleDownloadCV} /> */}
             
           </motion.div>
+          <HagridButton onClick={handleDownloadCV} />
         </Box>
 
         <Box sx={{ 
