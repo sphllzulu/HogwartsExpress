@@ -1,12 +1,12 @@
-// components/ScrollReveal.js
+
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const ScrollReveal = ({ children, delay = 0 }) => {
   const [ref, inView] = useInView({
-    triggerOnce: true, // Only trigger once
-    threshold: 0.1, // Trigger when 10% of the component is visible
+    triggerOnce: true, 
+    threshold: 0.1, 
   });
 
   const variants = {
