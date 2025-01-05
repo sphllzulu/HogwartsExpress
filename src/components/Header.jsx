@@ -52,7 +52,7 @@ const Header = () => (
 
           
         >
-          Wizarding Web Works
+          Siphelele Zulu
         </Typography>
       </motion.div>
     </Toolbar>
