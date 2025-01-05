@@ -1,11 +1,25 @@
 import { AppBar, Toolbar, IconButton, Typography } from '@mui/material';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import { motion } from 'framer-motion';
-import './Header.css'
+import { keyframes } from '@emotion/react';
+
+// Floating animation for the MenuBookIcon
+const floatingAnimation = keyframes`
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+`;
 
 const Header = () => (
-  <AppBar position="static" sx={{ backgroundColor: '#5e0b0b', boxShadow: '0 0 10px #f5d042' }}>
+  <AppBar
+    position="static"
+    sx={{
+      backgroundColor: 'rgba(245, 208, 66, 0.05)',
+      boxShadow: '0 0 10px #f5d042',
+    }}
+  >
     <Toolbar>
+      {/* MenuBookIcon with floating animation */}
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -21,43 +35,33 @@ const Header = () => (
               transition: 'transform 0.3s',
             },
             color: '#f5d042',
+            animation: `${floatingAnimation} 4s ease-in-out infinite`,
           }}
         >
-          <MenuBookIcon sx={{ fontSize: '2rem', filter: 'drop-shadow(0 0 8px #f5d042)' }} />
+          <MenuBookIcon
+            sx={{
+              fontSize: '2rem',
+              filter: 'drop-shadow(0 0 8px #f5d042)',
+            }}
+          />
         </IconButton>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-        style={{ marginLeft: '1rem' }}
-      >
-        <Typography
-          variant="h4"
-          component={motion.div}
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            repeatType: 'reverse',
-            ease: 'easeInOut',
-          }}
-          style={{
-            fontFamily: 'outfit',
-            color: '#f5d042',
-            textShadow: '0 0 8px #f5d042, 0 0 20px #f5d042',
-            letterSpacing: '2px',
-          }}
 
-          
-        >
-          Siphelele Zulu
-        </Typography>
-      </motion.div>
+      {/* Name (completely still) */}
+      <Typography
+        variant="h4"
+        sx={{
+          fontFamily: '"Outfit", fantasy',
+          color: '#f5d042',
+          textShadow: '0 0 8px #f5d042, 0 0 20px #f5d042',
+          letterSpacing: '2px',
+          marginLeft: '1rem',
+        }}
+      >
+        Siphelele Zulu
+      </Typography>
     </Toolbar>
   </AppBar>
 );
 
 export default Header;
-
