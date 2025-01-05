@@ -8,6 +8,7 @@ import {
   Button,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { keyframes } from "@emotion/react";
 import './SpellBook.css'
 
 const projects = {
@@ -291,63 +292,133 @@ const projects = {
     ],
   };
   
+  const shimmerAnimation = keyframes`
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+`;
+
+// Hogwarts house colors
+const houseColors = {
+  Gryffindor: "#AA0000",
+  Slytherin: "#006400",
+  Ravenclaw: "#0E1A40",
+  Hufflepuff: "#FFDB00",
+};
+
 
 const Spellbook = () => (
-  <Box sx={{ mx: "auto", maxWidth: 900, mt: 5 }}>
-    <Typography variant="h3" sx={{ textAlign: "center", fontFamily: "Cursive" }}>
+  <Box sx={{ mx: "auto", maxWidth: 900, mt: 5, p: 3 }}>
+    {/* Title */}
+    <Typography
+      variant="h3"
+      sx={{
+        textAlign: "center",
+        fontFamily: '"Outfit", fantasy',
+        background: "linear-gradient(45deg, #f5d042, #ffa500, #f5d042)",
+        backgroundSize: "200% auto",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        animation: `${shimmerAnimation} 3s linear infinite`,
+        textShadow: "2px 2px 4px rgba(0, 0, 0, 0.3)",
+        mb: 4,
+      }}
+    >
       The Spellbook of Projects
     </Typography>
-    {Object.entries(projects).map(([stack, stackProjects]) => (
-      <Accordion key={stack} sx={{ mb: 2 }}>
-        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography variant="h5" sx={{ fontFamily: "Cursive" }}>
-            {stack} Chapter
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          {stackProjects.map((project, index) => (
-            <Box key={index} sx={{ mb: 4 }}>
-              <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-                ✨ {project.name}
-              </Typography>
-              <Typography variant="body1" sx={{ mb: 1 }}>
-                {project.description}
-              </Typography>
-              <Typography variant="body2">
-                <strong>Tech Stack:</strong> {project.techStack.join(", ")}
-              </Typography>
-              <Typography variant="body2">
-                <strong>Features:</strong> {project.features.join(", ")}
-              </Typography>
-              <Typography variant="body2">
-                <strong>Challenges:</strong> {project.challenges}
-              </Typography>
-              <Typography variant="body2" sx={{ mb: 2 }}>
-                <strong>Solutions:</strong> {project.solutions}
-              </Typography>
-              <img
-                src={project.screenshot}
-                alt={`${project.name} screenshot`}
-                style={{
-                  maxWidth: "100%",
+
+    {/* Accordion for each project stack */}
+    {Object.entries(projects).map(([stack, stackProjects], index) => {
+      const houseColor = Object.values(houseColors)[index % 4]; // Cycle through house colors
+      return (
+        <Accordion
+          key={stack}
+          sx={{
+            mb: 2,
+            backgroundColor: "rgba(245, 208, 66, 0.1)",
+            boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+            "&:hover": {
+              boxShadow: `0 0 15px ${houseColor}`,
+            },
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon sx={{ color: houseColor }} />}
+            sx={{
+              backgroundColor: "rgba(94, 11, 11, 0.1)",
+              "&:hover": {
+                backgroundColor: "rgba(94, 11, 11, 0.2)",
+              },
+            }}
+          >
+            <Typography
+              variant="h5"
+              sx={{
+                fontFamily: '"Outfit", fantasy',
+                color: houseColor,
+                textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)",
+              }}
+            >
+              {stack} Chapter
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            {stackProjects.map((project, projectIndex) => (
+              <Box
+                key={projectIndex}
+                sx={{
+                  mb: 4,
+                  p: 2,
+                  backgroundColor: "rgba(245, 208, 66, 0.05)",
                   borderRadius: "8px",
-                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.3)",
-                  marginBottom: "8px",
+                  boxShadow: "0 0 5px rgba(0, 0, 0, 0.1)",
+                  "&:hover": {
+                    boxShadow: `0 0 10px ${houseColor}`,
+                  },
                 }}
-              />
-              <Button
-                variant="contained"
-                color="primary"
-                href={project.demo}
-                target="_blank"
               >
-                View Demo
-              </Button>
-            </Box>
-          ))}
-        </AccordionDetails>
-      </Accordion>
-    ))}
+                <Typography
+                  variant="h6"
+                  sx={{ fontWeight: "bold", color: houseColor }}
+                >
+                  ✨ {project.name}
+                </Typography>
+                <Typography variant="body1" sx={{ mb: 1 }}>
+                  {project.description}
+                </Typography>
+                <Typography variant="body2">
+                  <strong>Tech Stack:</strong> {project.techStack.join(", ")}
+                </Typography>
+                <Typography variant="body2">
+                  <strong>Features:</strong> {project.features.join(", ")}
+                </Typography>
+                <Typography variant="body2">
+                  <strong>Challenges:</strong> {project.challenges}
+                </Typography>
+                <Typography variant="body2" sx={{ mb: 2 }}>
+                  <strong>Solutions:</strong> {project.solutions}
+                </Typography>
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: houseColor,
+                    color: "#5e0b0b",
+                    fontFamily: '"Outfit", fantasy',
+                    "&:hover": {
+                      backgroundColor: houseColor,
+                      opacity: 0.9,
+                    },
+                  }}
+                  href={project.demo}
+                  target="_blank"
+                >
+                  View Demo
+                </Button>
+              </Box>
+            ))}
+          </AccordionDetails>
+        </Accordion>
+      );
+    })}
   </Box>
 );
 
