@@ -93,8 +93,8 @@ const projects = {
         description: "This is a simple HTTP server built with Node.js. It handles different routes such as the home page, an about page, a JSON API response, and a POST request to handle incoming data. The server listens on port 3000.",
         techStack: ["Node.js"],
         features: ["CRUD API", "Authentication"],
-        challenges: "Ensuring scalability.",
-        solutions: "Optimized middleware pipelines.",
+        challenges: "Getting a hang of the http methods and headers was a bit tricky",
+        solutions: "Creating a basic server, over and over again helped me get used to the syntax",
         demo: "https://github.com/sphllzulu/basicServer",
       },
       {
