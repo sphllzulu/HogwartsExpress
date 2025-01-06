@@ -18,7 +18,7 @@ const FeedbackAndReflections = () => {
   const selfReflection = {
     growth: "Throughout the program, I have significantly improved my skills in React, Node.js, and database management. I’ve also learned how to work collaboratively in a team.",
     strengths: "My strengths include problem-solving, attention to detail, and the ability to learn new technologies quickly.",
-    improvements: "I need to improve my time management skills and gain more experience in deploying scalable applications.",
+    improvements: "I need to improve my time management skills and focusing on optimization and perfomance as well as robust error handling.",
   };
 
   return (
