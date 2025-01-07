@@ -299,7 +299,7 @@ const projects = {
 
 // Hogwarts house colors
 const houseColors = {
-  Gryffindor: "#AA0000",
+  Gryffindor: "#B22222",
   Slytherin: "#006400",
   Ravenclaw: "#0E1A40",
   Hufflepuff: "#FFDB00",
