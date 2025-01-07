@@ -100,7 +100,7 @@ const Contact = () => {
           </Typography>
           <Button
             variant="outlined"
-            href="www.linkedin.com/in/siphelele-zulu-6a6a3916a"
+            href="https://www.linkedin.com/in/siphelele-zulu-6a6a3916a/"
             target="_blank"
             sx={{
               color: "#f5d042",

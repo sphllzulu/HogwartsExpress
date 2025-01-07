@@ -45,7 +45,8 @@ const PostProgramGoals = () => {
 
   const longTermGoals = [
     "Become a full-stack developer.",
-    "Contribute to open-source projects regularly.",
+    "Learn AI and Machine Learning"
+    "Get more industry certifications",
     "Mentor aspiring developers.",
     "Go into freelancing.",
     "Launch a tech startup or side project.",
