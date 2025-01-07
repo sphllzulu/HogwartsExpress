@@ -98,8 +98,8 @@ git push origin feature/your-feature-name
 
 ## Contact
 If you'd like to get in touch, feel free to reach out:
-* **Email**: your-email@example.com
-* **LinkedIn**: Your LinkedIn Profile
-* **GitHub**: Your GitHub Profile
+* **Email**: sphllzulu@gmail.com
+
+
 
 Thank you for visiting my portfolio! I hope you enjoyed the magical journey. 🪄✨
