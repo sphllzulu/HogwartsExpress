@@ -192,7 +192,7 @@ const Header = () => {
           >
             <Box
               component="img"
-              src="./ME.jpg"
+              src="./Me2.png"
               alt="Siphelele Zulu"
               onClick={handleOpenModal}
               sx={{
@@ -223,7 +223,7 @@ const Header = () => {
         >
           <Box
             component="img"
-            src="./ME.jpg"
+            src="./Me2.png"
             alt="Siphelele Zulu"
             sx={{
               maxWidth: "90%",
