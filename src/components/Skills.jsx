@@ -458,7 +458,7 @@ const Skills = () => {
           color: "#f5d042",
           textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)",
           mb: 2,
-          background: "linear-gradient(45deg, #0E1A40, #FFDB00)",
+          background: "linear-gradient(45deg, #012169, #FFDB00)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         }}

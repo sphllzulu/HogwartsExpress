@@ -21,8 +21,8 @@ const projects = {
       challenges: "Making the site responsive",
       solutions: "Used React's component based architecture coupled with CSS flexbox to achieve responsiveness",
       demo: "https://1st-ui-challenge.vercel.app/",
+      github:"https://github.com/sphllzulu/1stUIChallenge",
       marks: 85, // Placeholder mark in percentage
-      notes:"Good work"
     },
     {
       name: "Employee Registration App",
@@ -32,9 +32,8 @@ const projects = {
       challenges: "Data kept disappearing when refreshing",
       solutions: "Used local storage to persist the data",
       demo: "https://registr-three.vercel.app/",
+      github:"https://github.com/sphllzulu/EmployeeReg",
       marks: 90, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "To-Do List Application",
@@ -44,9 +43,8 @@ const projects = {
       challenges: "Another user was able to see another user's tasks which is not ideal",
       solutions: "To track the user's activity I store the user ID on local storage along with their tasks so that the correct tasks are retrieved",
       demo: "https://glowing-malasada-70b205.netlify.app/",
+      github:"https://github.com/sphllzulu/ToDoReact/tree/sqljs",
       marks: 88, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Weather Application (SkyTrek)",
@@ -56,9 +54,8 @@ const projects = {
       challenges: "Push notifications and user's location was accessed even though they did not agree to it",
       solutions: "Implemented comprehensive error handling for different geolocation error scenarios, whether permission denied or granted",
       demo: "https://skytrek.onrender.com",
+      github:"https://github.com/sphllzulu/SkyTrek",
       marks: 92, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Gourmet Guide (Recipe App)",
@@ -68,9 +65,8 @@ const projects = {
       challenges: "Every user was able to update and delete another user's recipe which is not ideal",
       solutions: "Introduced Auth context which track user activity and ensures that user is able to only edit and delete their own stuff",
       demo: "https://gourmetguide-3.onrender.com",
+      github:"https://github.com/sphllzulu/GourmetGuide",
       marks: 87, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Shopping List App",
@@ -80,9 +76,8 @@ const projects = {
       challenges: "Data kept disappearing when refreshing",
       solutions: "Used React state management and component based architecture",
       demo: "https://shopify-1-h4k2.onrender.com",
+      github:"https://github.com/sphllzulu/shopify",
       marks: 89, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
  
     
@@ -95,10 +90,8 @@ const projects = {
       features: ["CRUD API", "Authentication"],
       challenges: "Getting a hang of the http methods and headers was a bit tricky",
       solutions: "Creating a basic server, over and over again helped me get used to the syntax",
-      demo: "https://github.com/sphllzulu/basicServer",
+      github: "https://github.com/sphllzulu/basicServer",
       marks: 80, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Timed Quiz Application",
@@ -107,10 +100,8 @@ const projects = {
       features: ["Timed Questions", "Asynchronous Question Handling","Dynamic Question Progression"],
       challenges: "ReadlineSync made the application not work as expected",
       solutions: "Opted for readline which handles asynchronous operations",
-      demo: "https://github.com/sphllzulu/NodeQuiz",
+      github: "https://github.com/sphllzulu/NodeQuiz",
       marks: 85, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Shopping List File Manager & REST API",
@@ -119,10 +110,8 @@ const projects = {
       features: ["File Manager", "Shopping List API","Error Handling & Validation"],
       challenges: "Setting up proper error handling for file operations",
       solutions: "Checked if directories/files exist before trying to create them or doing any operations",
-      demo: "https://github.com/sphllzulu/nodeShoppingList",
+      github: "https://github.com/sphllzulu/nodeShoppingList",
       marks: 88, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Book Directory API",
@@ -131,10 +120,8 @@ const projects = {
       features: ["List all books", "Get a specific book by ISBN","Add a new book","Update an existing book","Delete a book"],
       challenges: "At first I was auto generating the ISBNs,that would cause authenticity issues",
       solutions: "I added the ISBN as one of the fields when adding a book to ensure authenticity",
-      demo: "https://github.com/sphllzulu/bookDirectory",
+      github: "https://github.com/sphllzulu/bookDirectory",
       marks: 87, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Card Guessing Game",
@@ -144,9 +131,8 @@ const projects = {
       challenges: "I had a problem connecting the UI to the backend",
       solutions: "The back was handling operations such as starting the timer, starting the game and the score, while the front is just the ui and handles the matching of the avatars",
       demo: "https://guess-the-avatar.vercel.app/",
+      github:"https://github.com/sphllzulu/nodeMemoryCardGame",
       marks: 90, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Employee Registration with Firebase",
@@ -156,9 +142,8 @@ const projects = {
       challenges: "Connecting an existing project and migrating to firebase instead from local storage was a bit tricky, especially handling the images, I was unable to see the images",
       solutions: "Created a separate component to handle images and used it throughout the app for images, it stored the uploaded pictures on firebase storage and retrieved the url and used it to display the images ",
       demo: "https://node-regipro.vercel.app/",
+      github:"https://github.com/sphllzulu/nodeRegipro",
       marks: 89, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Employee Registration with Firebase",
@@ -168,9 +153,8 @@ const projects = {
       challenges: "Making the tables responsive was extremely challenging",
       solutions: "Opted to make the tables scrollable and some screen the table is vertical ",
       demo: "https://noderegipro-2.onrender.com",
+      github:"https://github.com/sphllzulu/nodeRegipro/tree/admins",
       marks: 88, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Deployed Server",
@@ -180,9 +164,8 @@ const projects = {
       challenges: "Finding a service that would allow me to host a server without having to transform my code and make it use serverless functions",
       solutions: "I used Render which is great for full stack applications ",
       demo: "https://serverdeployment-fm64.onrender.com",
+      github:"https://github.com/sphllzulu/nodeFinalProject",
       marks: 86, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     
   ],
@@ -194,10 +177,8 @@ const projects = {
       features: [" Database Creation", "Collection Setup","Data Insertion","Data Manipulation"],
       challenges: "Difficulty installing MongoDB or ensuring the MongoDB server is running",
       solutions: "Used MongoDB Compass to verify that the server is running ",
-      demo: "https://github.com/sphllzulu/mongoDB1stProject",
+      github: "https://github.com/sphllzulu/mongoDB1stProject",
       marks: 85, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Library Management System",
@@ -206,10 +187,8 @@ const projects = {
       features: [" Database Creation", "Collection Setup","Data Insertion","Data Manipulation"],
       challenges: "Writing advanced queries, such as finding available books published after 1950.",
       solutions: "Broke queries into smaller parts to debug and test. ",
-      demo: "https://github.com/sphllzulu/MongoDBTask3",
+      github: "https://github.com/sphllzulu/MongoDBTask3",
       marks: 88, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Recipe API",
@@ -218,10 +197,8 @@ const projects = {
       features: ["CRUD operations for recipes", "Input validation using Joi","Pagination for recipe listings","MongoDB integration"],
       challenges: "Validation was an issue, if user would input data as an unexpected data type it would be converted",
       solutions: "Used Joi for validation, I did not have to memorize the regular expressions ",
-      demo: "https://github.com/sphllzulu/mongoDB1stProject",
+      github: "https://github.com/sphllzulu/mongoDB1stProject",
       marks: 87, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Recipe API with Authentication",
@@ -230,10 +207,8 @@ const projects = {
       features: ["CRUD operations for recipes", "Input validation using Joi","Pagination for recipe listings","MongoDB integration","RBAC",],
       challenges: "I had an issue with issuing a token on JWT",
       solutions: "Opted for session based authentication via express-session",
-      demo: "https://github.com/sphllzulu/mongoDBtask5/tree/auth",
+      github: "https://github.com/sphllzulu/mongoDBtask5/tree/auth",
       marks: 90, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     
   ],
@@ -245,10 +220,8 @@ const projects = {
       features: ["Customizable Text","Image Upload","Decorations","Save and View Cards"],
       challenges: "anytime I type one letter I lose focus and have to click on the input again and again to type one by one. I suspect that this happened because of the OnchangeText prop I've put on the inputs that probably rerender. ",
       solutions: "Simplified the TextInput component by removing unnecessary focus handling",
-      demo: "https://github.com/sphllzulu/BirthdayCardApp",
+      github: "https://github.com/sphllzulu/BirthdayCardApp",
       marks: 85, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Audio Recording App",
@@ -257,10 +230,8 @@ const projects = {
       features: ["High-quality audio recording","Pause and resume recording","Persistent recording storage"," Search recordings by number"],
       challenges: "Designing this application was quite difficult, react native was still fairly new to me",
       solutions: "I took a simplistic approach and made the app less complicated but fully functional",
-      demo: "https://github.com/sphllzulu/voiceR",
+      github: "https://github.com/sphllzulu/voiceR",
       marks: 88, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Audio Recording App with Authentication",
@@ -269,10 +240,8 @@ const projects = {
       features: ["High-quality audio recording","Pause and resume recording","Persistent recording storage"," Search recordings by number","Update the recording name"],
       challenges: "Cloud intergration was a huge challenge ",
       solutions: "I used Firebase for cloud intergration, so the voice notes are being saved on firebase storage, however they are not being synced across devices",
-      demo: "https://github.com/sphllzulu/voiceRec",
+      github: "https://github.com/sphllzulu/voiceRec",
       marks: 89, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "React Native E-commerce Payment App with Paystack",
@@ -281,10 +250,8 @@ const projects = {
       features: ["Dynamic product listing","Cart total calculation","Seamless Paystack payment integration","Payment success and cancellation handling"],
       challenges: "I was used to working with stripe which is simple staightforward,so we were challenged with working with a brand new payment option which was challenging",
       solutions: "Paystack webview documentation was very helpful in this regard, went through it and was able to complete the task",
-      demo: "https://github.com/sphllzulu/paymentGateway",
+      github: "https://github.com/sphllzulu/paymentGateway",
       marks: 90, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Geolocation Image Gallery App",
@@ -293,10 +260,8 @@ const projects = {
       features: ["Secure User Authentication","Camera Integration","Geolocation Tracking"," Advanced Search"],
       challenges: "Working with SQLite and Geolocation was pretty challenging",
       solutions: "Expo SQLite documentation was also very helpful, it have me the most recent queries to perform crud operations",
-      demo: "https://github.com/sphllzulu/GalleryApp",
+      github: "https://github.com/sphllzulu/GalleryApp",
       marks: 87, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Shopping List",
@@ -305,10 +270,8 @@ const projects = {
       features: ["High-quality audio recording","Pause and resume recording","Persistent recording storage"," Search recordings by number"],
       challenges: "Getting the shopping list content to persist ",
       solutions: "I used redux's persistor combined with async storage",
-      demo: "https://github.com/sphllzulu/BirthdayCardApp",
+      github: "https://github.com/sphllzulu/BirthdayCardApp",
       marks: 86, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     
   ],
@@ -321,10 +284,8 @@ const projects = {
       features: ["Restaurant Discovery","Real-time Booking","Secure Payments","User Profiles","Reviews & Ratings","Smart Scheduling"],
       challenges: "Working with someone on a project",
       solutions: "Constant communication was very helpful, we were able to solve most issues because we communicated a lot",
-      demo: "https://github.com/EdwardCodeTriber/Restaurant-reservations-app/tree/main",
+      github: "https://github.com/EdwardCodeTriber/Restaurant-reservations-app/tree/main",
       marks: 92, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
     {
       name: "Restaurant Reservation App",
@@ -333,10 +294,8 @@ const projects = {
       features: ["User authentication","Browse beauty products","Shopping cart management","Responsive design "],
       challenges: "Uploading images on firebase was a huge problem, we could not get the images to appear, it seemed like the link that we were getting back from firebase was corrupted",
       solutions: "We opted for Cloudinary which was really just a means to an end,the app has a uri generator and user can just paste the uri to upload an image",
-      demo: "https://quikkmart-1.onrender.com",
+      github: "https://github.com/sphllzulu/reservationAdminrn/tree/main",
       marks: 91, // Placeholder mark in percentage
-      notes:"Good work"
-
     },
   ],
   Assessments: [
@@ -348,8 +307,9 @@ const projects = {
       challenges: "Deployment and planning how to structure the app with very little time",
       solutions: "Even though I had poorly planned the app, I was able to break the tasks into small manageable tasks and assign a time limit to each task. I deployed the frontend and backend separately on Render",
       demo: "https://quikkmart-1.onrender.com",
+      github:"https://github.com/sphllzulu/quikkmart",
       marks: 89, // Placeholder mark in percentage
-      notes:"Excellent"
+      notes:"Excel"
     },
     {
       name: "Hotel App (EazyLiving)",
@@ -359,6 +319,7 @@ const projects = {
       challenges: "Enabling email notifications each time a user books a room",
       solutions: "I set up a nodemailer server which is responsible for sending emails the user each time they book a room ",
       demo: "https://eezyliving.onrender.com",
+      github:"https://github.com/sphllzulu/eazyLiving",
       marks: 91, // Placeholder mark in percentage
       notes:"Excellent"
     },
@@ -370,6 +331,7 @@ const projects = {
       challenges: "Uploading images, I was previously using online images to display on the main app,which is not ideal because user would first have to get a url for the image before uploading, which is not ideal",
       solutions: "I used firebase storage, so user can upload an image from their gallery and it will be sent to firebase",
       demo: "https://eezyliving-admin-3.onrender.com",
+      github:"https://github.com/sphllzulu/eezyLiving-Admin",
       marks: 90, // Placeholder mark in percentage
       notes:"Excellent"
     },
@@ -381,7 +343,7 @@ const projects = {
       features: ["Restaurant Discovery","Real-time Booking","Secure Payments","User Profiles","Reviews & Ratings","Smart Scheduling"],
       challenges: "Working with someone on a project",
       solutions: "Constant communication was very helpful, we were able to solve most issues because we communicated a lot",
-      demo: "https://github.com/EdwardCodeTriber/Restaurant-reservations-app/tree/main",
+      github: "https://github.com/EdwardCodeTriber/Restaurant-reservations-app/tree/main",
       marks: 92, // Placeholder mark in percentage
       notes:"Excellent"
     },
@@ -392,12 +354,13 @@ const projects = {
       features: ["User authentication","Browse beauty products","Shopping cart management","Responsive design "],
       challenges: "Uploading images on firebase was a huge problem, we could not get the images to appear, it seemed like the link that we were getting back from firebase was corrupted",
       solutions: "We opted for Cloudinary which was really just a means to an end,the app has a uri generator and user can just paste the uri to upload an image",
-      demo: "https://quikkmart-1.onrender.com",
+      github: "https://github.com/sphllzulu/reservationAdminrn/tree/main",
       marks: 91, // Placeholder mark in percentage
       notes:"Excellent"
     },
   ],
 };
+
   const shimmerAnimation = keyframes`
   0% { background-position: -200% center; }
   100% { background-position: 200% center; }
@@ -500,31 +463,50 @@ const Spellbook = () => (
                 <Typography variant="body2">
                   <strong>Challenges:</strong> {project.challenges}
                 </Typography>
-                <Typography variant="body2" >
+                <Typography variant="body2">
                   <strong>Solutions:</strong> {project.solutions}
                 </Typography>
-                <Typography variant="body2" >
+                <Typography variant="body2" sx={{ mb: 2 }}>
                   <strong>Grade:</strong> {project.marks}
                 </Typography>
-                <Typography variant="body2" sx={{mb:2}}>
-                  <strong>Notes:</strong> {project.notes}
-                </Typography>
-                <Button
-                  variant="contained"
-                  sx={{
-                    backgroundColor: houseColor,
-                    color: "#5e0b0b",
-                    fontFamily: '"Outfit", fantasy',
-                    "&:hover": {
-                      backgroundColor: houseColor,
-                      opacity: 0.9,
-                    },
-                  }}
-                  href={project.demo}
-                  target="_blank"
-                >
-                  View Demo
-                </Button>
+                <Box sx={{ display: 'flex', gap: 2 }}>
+                  {project.demo && (
+                    <Button
+                      variant="contained"
+                      sx={{
+                        backgroundColor: houseColor,
+                        color: "#5e0b0b",
+                        fontFamily: '"Outfit", fantasy',
+                        "&:hover": {
+                          backgroundColor: houseColor,
+                          opacity: 0.9,
+                        },
+                      }}
+                      href={project.demo}
+                      target="_blank"
+                    >
+                      View Demo
+                    </Button>
+                  )}
+                  {project.github && (
+                    <Button
+                      variant="contained"
+                      sx={{
+                        backgroundColor: houseColor,
+                        color: "#5e0b0b",
+                        fontFamily: '"Outfit", fantasy',
+                        "&:hover": {
+                          backgroundColor: "#0E1A40",
+                          opacity: 0.9,
+                        },
+                      }}
+                      href={project.github}
+                      target="_blank"
+                    >
+                      GitHub
+                    </Button>
+                  )}
+                </Box>
               </Box>
             ))}
           </AccordionDetails>
@@ -535,3 +517,5 @@ const Spellbook = () => (
 );
 
 export default Spellbook;
+
+
