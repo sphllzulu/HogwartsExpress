@@ -98,6 +98,21 @@ const About = () => {
             >
               The Wizard Behind The Code
             </Typography>
+            <Typography 
+              variant="body1" 
+              paragraph
+              sx={{ 
+                fontFamily: '"Outfit", fantasy',
+                lineHeight: 1.8,
+                textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)',
+                animation: `${floatingAnimation} 7s ease-in-out infinite`,
+                animationDelay: '0.5s'
+              }}
+            >
+              CodeTribe location: Soweto <br/>  
+              Program enrolled: Codetribe Academy <br/>
+              Last updated:13/01/2025
+            </Typography>
 
             <Typography 
               variant="body1" 

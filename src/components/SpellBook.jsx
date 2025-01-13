@@ -23,6 +23,7 @@ const projects = {
       demo: "https://1st-ui-challenge.vercel.app/",
       github:"https://github.com/sphllzulu/1stUIChallenge",
       marks: 85, // Placeholder mark in percentage
+      notes:"",
     },
     {
       name: "Employee Registration App",
@@ -145,6 +146,7 @@ const projects = {
       github:"https://github.com/sphllzulu/nodeRegipro",
       marks: 89, // Placeholder mark in percentage
     },
+
     {
       name: "Employee Registration with Firebase",
       description: "This is a full-stack Employee Management System with a React frontend and an Express.js backend. It allows users to view, add, edit, and delete employee records, providing a user-friendly interface for managing employee data efficiently.",
@@ -167,7 +169,6 @@ const projects = {
       github:"https://github.com/sphllzulu/nodeFinalProject",
       marks: 86, // Placeholder mark in percentage
     },
-    
   ],
   MongoDB: [
     {
@@ -309,7 +310,7 @@ const projects = {
       demo: "https://quikkmart-1.onrender.com",
       github:"https://github.com/sphllzulu/quikkmart",
       marks: 89, // Placeholder mark in percentage
-      notes:"Excel"
+      notes:"Excellent"
     },
     {
       name: "Hotel App (EazyLiving)",
