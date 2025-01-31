@@ -68,12 +68,7 @@ function App() {
           <ScrollReveal delay={0.4}>
             <Spellbook />
           </ScrollReveal>
-          <ScrollReveal delay={0.6}>
-            <FeedbackAndReflections />
-          </ScrollReveal>
-          <ScrollReveal delay={0.8}>
-            <PostProgramGoals />
-          </ScrollReveal>
+          
           <ScrollReveal delay={1}>
             <Contact />
           </ScrollReveal>

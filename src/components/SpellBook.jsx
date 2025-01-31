@@ -189,7 +189,7 @@ const projects = {
       challenges: "Writing advanced queries, such as finding available books published after 1950.",
       solutions: "Broke queries into smaller parts to debug and test. ",
       github: "https://github.com/sphllzulu/MongoDBTask3",
-      marks: 88, // Placeholder mark in percentage
+      marks: 88, 
     },
     {
       name: "Recipe API",
@@ -199,7 +199,7 @@ const projects = {
       challenges: "Validation was an issue, if user would input data as an unexpected data type it would be converted",
       solutions: "Used Joi for validation, I did not have to memorize the regular expressions ",
       github: "https://github.com/sphllzulu/mongoDB1stProject",
-      marks: 87, // Placeholder mark in percentage
+      marks: 87, 
     },
     {
       name: "Recipe API with Authentication",
@@ -209,7 +209,7 @@ const projects = {
       challenges: "I had an issue with issuing a token on JWT",
       solutions: "Opted for session based authentication via express-session",
       github: "https://github.com/sphllzulu/mongoDBtask5/tree/auth",
-      marks: 90, // Placeholder mark in percentage
+      marks: 90, 
     },
     
   ],
@@ -222,7 +222,7 @@ const projects = {
       challenges: "anytime I type one letter I lose focus and have to click on the input again and again to type one by one. I suspect that this happened because of the OnchangeText prop I've put on the inputs that probably rerender. ",
       solutions: "Simplified the TextInput component by removing unnecessary focus handling",
       github: "https://github.com/sphllzulu/BirthdayCardApp",
-      marks: 85, // Placeholder mark in percentage
+      marks: 85, 
     },
     {
       name: "Audio Recording App",
@@ -232,7 +232,7 @@ const projects = {
       challenges: "Designing this application was quite difficult, react native was still fairly new to me",
       solutions: "I took a simplistic approach and made the app less complicated but fully functional",
       github: "https://github.com/sphllzulu/voiceR",
-      marks: 88, // Placeholder mark in percentage
+      marks: 88, 
     },
     {
       name: "Audio Recording App with Authentication",
@@ -242,7 +242,7 @@ const projects = {
       challenges: "Cloud intergration was a huge challenge ",
       solutions: "I used Firebase for cloud intergration, so the voice notes are being saved on firebase storage, however they are not being synced across devices",
       github: "https://github.com/sphllzulu/voiceRec",
-      marks: 89, // Placeholder mark in percentage
+      marks: 89,
     },
     {
       name: "React Native E-commerce Payment App with Paystack",
@@ -252,7 +252,7 @@ const projects = {
       challenges: "I was used to working with stripe which is simple staightforward,so we were challenged with working with a brand new payment option which was challenging",
       solutions: "Paystack webview documentation was very helpful in this regard, went through it and was able to complete the task",
       github: "https://github.com/sphllzulu/paymentGateway",
-      marks: 90, // Placeholder mark in percentage
+      marks: 90, 
     },
     {
       name: "Geolocation Image Gallery App",
@@ -262,7 +262,7 @@ const projects = {
       challenges: "Working with SQLite and Geolocation was pretty challenging",
       solutions: "Expo SQLite documentation was also very helpful, it have me the most recent queries to perform crud operations",
       github: "https://github.com/sphllzulu/GalleryApp",
-      marks: 87, // Placeholder mark in percentage
+      marks: 87, 
     },
     {
       name: "Shopping List",
@@ -272,7 +272,7 @@ const projects = {
       challenges: "Getting the shopping list content to persist ",
       solutions: "I used redux's persistor combined with async storage",
       github: "https://github.com/sphllzulu/BirthdayCardApp",
-      marks: 86, // Placeholder mark in percentage
+      marks: 86, 
     },
     
   ],
@@ -286,7 +286,7 @@ const projects = {
       challenges: "Working with someone on a project",
       solutions: "Constant communication was very helpful, we were able to solve most issues because we communicated a lot",
       github: "https://github.com/EdwardCodeTriber/Restaurant-reservations-app/tree/main",
-      marks: 92, // Placeholder mark in percentage
+      marks: 92, 
     },
     {
       name: "Restaurant Reservation App",
@@ -296,7 +296,18 @@ const projects = {
       challenges: "Uploading images on firebase was a huge problem, we could not get the images to appear, it seemed like the link that we were getting back from firebase was corrupted",
       solutions: "We opted for Cloudinary which was really just a means to an end,the app has a uri generator and user can just paste the uri to upload an image",
       github: "https://github.com/sphllzulu/reservationAdminrn/tree/main",
-      marks: 91, // Placeholder mark in percentage
+      marks: 91, 
+    },
+    {
+      name: "Temp Trail",
+      description: "TempTrail is a full-stack application consisting of a backend built with Node.js and frontend developed with React (Vite). The project helps users explore activities, search locations, and access weather information.",
+      techStack: ["React","FOURSQUARE API","Node","Mongo","Express","MapBox"],
+      features: ["Express.js server with API routes","User authentication","Search and weather components","Navigation & Map integration"],
+      challenges: "We had an issue with adding markers on the map of the places suggested based on the weather",
+      solutions: "We passed the activities as props in the map component and used the coordinates to add markers",
+      demo: "https://temperaturetrail-2.onrender.com",
+      github: "https://github.com/sphllzulu/TempTrail",
+      marks: 91, 
     },
   ],
   Assessments: [
@@ -309,7 +320,7 @@ const projects = {
       solutions: "Even though I had poorly planned the app, I was able to break the tasks into small manageable tasks and assign a time limit to each task. I deployed the frontend and backend separately on Render",
       demo: "https://quikkmart-1.onrender.com",
       github:"https://github.com/sphllzulu/quikkmart",
-      marks: 89, // Placeholder mark in percentage
+      marks: 89, 
       notes:"Excellent"
     },
     {
@@ -321,7 +332,7 @@ const projects = {
       solutions: "I set up a nodemailer server which is responsible for sending emails the user each time they book a room ",
       demo: "https://eezyliving.onrender.com",
       github:"https://github.com/sphllzulu/eazyLiving",
-      marks: 91, // Placeholder mark in percentage
+      marks: 91, 
       notes:"Excellent"
     },
     {
@@ -333,7 +344,7 @@ const projects = {
       solutions: "I used firebase storage, so user can upload an image from their gallery and it will be sent to firebase",
       demo: "https://eezyliving-admin-3.onrender.com",
       github:"https://github.com/sphllzulu/eezyLiving-Admin",
-      marks: 90, // Placeholder mark in percentage
+      marks: 90, 
       notes:"Excellent"
     },
     {
@@ -345,7 +356,7 @@ const projects = {
       challenges: "Working with someone on a project",
       solutions: "Constant communication was very helpful, we were able to solve most issues because we communicated a lot",
       github: "https://github.com/EdwardCodeTriber/Restaurant-reservations-app/tree/main",
-      marks: 92, // Placeholder mark in percentage
+      marks: 92, 
       notes:"Excellent"
     },
     {
@@ -393,7 +404,7 @@ const Spellbook = () => (
         mb: 4,
       }}
     >
-      The Spellbook of Projects
+      My Spellbook of Projects
     </Typography>
 
     {/* Accordion for each project stack */}
