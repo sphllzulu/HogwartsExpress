@@ -190,24 +190,7 @@ const Header = () => {
               animation: `${floatingAnimation} 4s ease-in-out infinite`,
             }}
           >
-            <Box
-              component="img"
-              src="./Me2.png"
-              alt="Siphelele Zulu"
-              onClick={handleOpenModal}
-              sx={{
-                width: "60px",
-                height: "60px",
-                borderRadius: "50%",
-                boxShadow: "0 0 10px rgba(245, 208, 66, 0.5)",
-                border: "2px solid #f5d042",
-                cursor: "pointer", // Indicates the image is clickable
-                transition: "transform 0.3s",
-                "&:hover": {
-                  transform: "scale(1.1)", // Slight zoom on hover
-                },
-              }}
-            />
+           
           </motion.div>
         </Box>
 
