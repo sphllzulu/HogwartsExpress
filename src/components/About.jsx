@@ -29,7 +29,7 @@ const About = () => {
   // Function to handle CV download
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = './cv.pdf'; 
+    link.href = './Siphelele.pdf'; 
     link.download = 'Siphelele_CV.pdf'; 
     document.body.appendChild(link);
     link.click();
