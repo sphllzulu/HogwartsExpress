@@ -298,6 +298,17 @@ const projects = {
       github: "https://github.com/sphllzulu/reservationAdminrn/tree/main",
       marks: 91, // Placeholder mark in percentage
     },
+    {
+      name: "Temp Trail",
+      description: "TempTrail is a full-stack application consisting of a backend built with Node.js and frontend developed with React (Vite). The project helps users explore activities, search locations, and access weather information.",
+      techStack: ["React","FOURSQUARE API","Node","Mongo","Express","MapBox"],
+      features: ["Express.js server with API routes","User authentication","Search and weather components","Navigation & Map integration"],
+      challenges: "We had an issue with adding markers on the map of the places suggested based on the weather",
+      solutions: "We passed the activities as props in the map component and used the coordinates to add markers",
+      demo: "https://temperaturetrail-2.onrender.com",
+      github: "https://github.com/sphllzulu/TempTrail",
+      marks: 91, 
+    },
   ],
   Assessments: [
    {
