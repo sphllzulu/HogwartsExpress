@@ -234,6 +234,30 @@ const Header = () => {
             }}
           />
         </Modal>
+
+        {/* Modal for Zoomed Image */}
+        <Modal
+          open={isModalOpen}
+          onClose={handleCloseModal}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Box
+            component="img"
+            src="./Me2.png"
+            alt="Siphelele Zulu"
+            sx={{
+              maxWidth: "90%",
+              maxHeight: "90%",
+              borderRadius: "12px",
+              boxShadow: "0 0 20px rgba(245, 208, 66, 0.5)",
+              border: "2px solid #f5d042",
+            }}
+          />
+        </Modal>
       </Toolbar>
     </AppBar>
   );
